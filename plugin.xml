@@ -99,7 +99,12 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <framework src="CoreLocation.framework" />
 
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string></string>
+            <string>kuai.io requires background location tracking</string>
+        </config-file>
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>location</string>
+            </array>
         </config-file>
 
     </platform>
